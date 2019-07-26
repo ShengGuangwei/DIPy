@@ -66,9 +66,6 @@ def get_ndvi(in_name, out_name, band_num_red, band_num_nir):
     :param band_num_nir: 输入图像中近红外波段对应的波段
     :return:
     """
-    # 获取图像所在路径以及不带后缀的文件名
-    (filepath, fullname) = os.path.split(in_name)
-    (prename, suffix) = os.path.splitext(fullname)
     # 读取图像
     im_data, im_width, im_height, im_proj, im_geotrans = read_img(in_name)
     # 读取红光波段和近红外波段
@@ -76,11 +73,16 @@ def get_ndvi(in_name, out_name, band_num_red, band_num_nir):
     if 0 < band_num_nir <= im_bandmaxnum and 0 < band_num_red <= im_bandmaxnum:
         red_band = im_data[band_num_red - 1]
         nir_band = im_data[band_num_nir - 1]
+
+        # 避免出现负值和零值
+        red_band[red_band <= 0] = 1
+        nir_band[nir_band <= 0] = 1
         red_band = red_band.astype(np.float32)
         nir_band = nir_band.astype(np.float32)
+
         # 计算NDVI
         ndvi = (nir_band - red_band) / (nir_band + red_band)
-        # 去除NDVI计算结果中的NAN值，并将结果转换成float32
+        # 避免NDVI计算结果出现NAN值，并将结果转换成float32
         nan_index = np.isnan(ndvi)
         ndvi[nan_index] = 0
         ndvi = ndvi.astype(np.float32)
