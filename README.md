@@ -3,9 +3,14 @@
 
 ## 依赖的库  
 
-`osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源库](https://github.com/OSGeo)，包括GDAL(英文全称为Geospatial Data Abstraction Library，是一个在X/MIT许可协议下的开源栅格空间数据转换库)、ogr(处理矢量文件)、osr(处理空间参考)等 
-`Pillow`：Pillow is the friendly PIL fork by Alex Clark and Contributors, and PIL is the [Python Imaging Library](https://github.com/python-pillow/Pillow) by Fredrik Lundh and Contributors
-`NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础性的库
+`osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源库](https://github.com/OSGeo)
+   * GDAL：英文全称为Geospatial Data Abstraction Library，是一个在X/MIT许可协议下的开源栅格空间数据转换库
+   * ogr：处理矢量文件
+   * osr：处理空间参考等 
+
+`Pillow`：Pillow is the friendly PIL fork by Alex Clark and Contributors, and PIL is the [Python Imaging Library](https://github.com/python-pillow/Pillow) by Fredrik Lundh and Contributors  
+
+`NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础性库  
 
 ## Cookbook  
 
@@ -20,9 +25,9 @@
 
 ## 各种库下载地址  
 
-:arrow_down: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)  
+:beginner: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)  
 
-> :page_facing_up: 文件结构  
+## 组织结构  
 
 ###  `SpatialReference.py`  
 
