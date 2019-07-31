@@ -3,13 +3,11 @@
 
 ## 依赖的包  
 
-`osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源包](https://github.com/OSGeo)  
+`osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源包](https://github.com/OSGeo)，包括GDAL、OGR和OSR  
 
    > GDAL：英文全称为Geospatial Data Abstraction Library，是一个在X/MIT许可协议下的开源栅格空间数据转换库  
-     
-   > ogr：处理矢量文件的包  
-     
-   > osr：处理空间参考等的包 
+   > OGR：处理矢量文件的包  
+   > OSR：处理空间参考等的包 
 
 `Pillow`：Pillow is the friendly PIL fork by Alex Clark and Contributors, and PIL is the [Python Imaging Library](https://github.com/python-pillow/Pillow) by Fredrik Lundh and Contributors  
 
