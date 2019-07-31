@@ -9,7 +9,7 @@
    > OGR：处理矢量文件的包  
    > OSR：处理空间参考等的包 
 
-`Pillow`：Pillow is the friendly PIL fork by Alex Clark and Contributors, and PIL is the [Python Imaging Library](https://github.com/python-pillow/Pillow) by Fredrik Lundh and Contributors  
+`Pillow`：[Pillow](https://github.com/python-pillow/Pillow)  is the friendly PIL fork by Alex Clark and Contributors, and PIL is the Python Imaging Library by Fredrik Lundh and Contributors  
 
 `NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础性包  
 
@@ -65,4 +65,4 @@
 
 :smirk: XML文件处理  
 
-:smirk: 根据矢量文件（如shapefile文件）的范围获取图像对应位置的值并分析
+:smirk: GeoJson文件处理
