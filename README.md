@@ -4,8 +4,7 @@ This is a Python package for digital image processing based on GDAL, osr, ogr, N
 :page_facing_up: 
 ## **文件结构**  
 
-:simple_smile: 
-### `SpatialReference.py`：  
+###  `SpatialReference.py`
 
   * `getPrjGeo`：获取给定数据的投影参考系和地理参考系 
   * `PCStoGCS`：将投影坐标转换为经纬度坐标 
@@ -15,7 +14,7 @@ This is a Python package for digital image processing based on GDAL, osr, ogr, N
   * `getGeoDecimal`：将度分秒形式的坐标转换为小数形式
   * `getShapefile`：根据GDAL地理数据的覆盖范围生成相应的polygon文件
   
-### :simple_smile: `SpectralIndex.py`：  
+### `SpectralIndex.py`
 
   * `read_img`：读取图像，返回图像数组等信息
   * `export_singleband`：输出单波段图像
