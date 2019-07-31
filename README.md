@@ -1,7 +1,7 @@
 # DIPy
 This is a Python package for digital image processing based on GDAL, osr, ogr, NumPy etc. :earth_africa:
 
-## :simple_smile: 文件结构  
+> :page_facing_up: 文件结构  
 
 ###  `SpatialReference.py`  
 
@@ -19,11 +19,11 @@ This is a Python package for digital image processing based on GDAL, osr, ogr, N
   * `export_singleband`：输出单波段图像
   * `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
   
-### :`FileScanning.py`  
+### `FileScanning.py`  
 
   * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组
 
-### :`GetShapefileCover.py`  
+### : `GetShapefileCover.py`  
 
   * `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值
   
