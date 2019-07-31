@@ -1,10 +1,30 @@
 # DIPy
-:earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing based on GDAL, osr, ogr, NumPy etc.   
-##  
+:earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing based on GDAL, osr, ogr, NumPy etc.  
+
+## 依赖的库  
+
+`osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源库](https://github.com/OSGeo)，包括GDAL(英文全称为Geospatial Data Abstraction Library，是一个在X/MIT许可协议下的开源栅格空间数据转换库)、ogr(处理矢量文件)、osr(处理空间参考)等 
+`Pillow`：Pillow is the friendly PIL fork by Alex Clark and Contributors, and PIL is the [Python Imaging Library](https://github.com/python-pillow/Pillow) by Fredrik Lundh and Contributors
+`NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础性的库
+
+## Cookbook  
+
+:wink: [the Python GDAL/OGR Cookbook](https://pcjericks.github.io/py-gdalogr-cookbook/)  
+
+:wink: [GDAL documentation](https://gdal.org/#)  
+
+:wink: [Python GDAL课程笔记](https://www.osgeo.cn/python_gdal_utah_tutorial/index.html)  
+
+:wink: [GISpark](https://gispark.readthedocs.io/zh_CN/latest/index.html)  
+
+
+## 各种库下载地址  
+
+:arrow_down: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)  
 
 > :page_facing_up: 文件结构  
 
-###  :wink: `SpatialReference.py`  
+###  `SpatialReference.py`  
 
   * `getPrjGeo`：获取给定数据的投影参考系和地理参考系 
   * `PCStoGCS`：将投影坐标转换为经纬度坐标 
@@ -14,19 +34,20 @@
   * `getGeoDecimal`：将度分秒形式的坐标转换为小数形式
   * `getShapefile`：根据GDAL地理数据的覆盖范围生成相应的polygon文件
   
-### :wink: `SpectralIndex.py`  
+### `SpectralIndex.py`  
 
   * `read_img`：读取图像，返回图像数组等信息
   * `export_singleband`：输出单波段图像
   * `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
   
-### :wink: `FileScanning.py`  
+### `FileScanning.py`  
 
   * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组
 
-### :wink: `GetShapefileCover.py`  
+### `GetShapefileCover.py`  
 
-  * `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值
+  * `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值  
+  > 代码来自[K. Arthur Endsley的博客](http://karthur.org/2015/clipping-rasters-in-python.html)
   
 > :bomb: **存在的问题：**  
 
