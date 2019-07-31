@@ -1,9 +1,10 @@
 # DIPy
-This is a Python package for digital image processing based on GDAL, osr, ogr, NumPy etc. :earth_africa:
+:earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing based on GDAL, osr, ogr, NumPy etc.   
+##  
 
 > :page_facing_up: 文件结构  
 
-###  `SpatialReference.py`  
+###  :wink: `SpatialReference.py`  
 
   * `getPrjGeo`：获取给定数据的投影参考系和地理参考系 
   * `PCStoGCS`：将投影坐标转换为经纬度坐标 
@@ -13,17 +14,17 @@ This is a Python package for digital image processing based on GDAL, osr, ogr, N
   * `getGeoDecimal`：将度分秒形式的坐标转换为小数形式
   * `getShapefile`：根据GDAL地理数据的覆盖范围生成相应的polygon文件
   
-### `SpectralIndex.py`  
+### :wink: `SpectralIndex.py`  
 
   * `read_img`：读取图像，返回图像数组等信息
   * `export_singleband`：输出单波段图像
   * `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
   
-### `FileScanning.py`  
+### :wink: `FileScanning.py`  
 
   * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组
 
-### : `GetShapefileCover.py`  
+### :wink: `GetShapefileCover.py`  
 
   * `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值
   
