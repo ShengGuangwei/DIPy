@@ -24,7 +24,7 @@
 :wink: [GISpark](https://gispark.readthedocs.io/zh_CN/latest/index.html)  
 
 
-## 各种包的下载地址  
+## 各种package的下载地址  
 
 :beginner: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)  
 
