@@ -16,6 +16,9 @@ This is a Python package for digital image processing based on GDAL, osr, ogr, N
   * `export_singleband`：输出单波段图像
   * `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
   
+### `FileScanning.py`：
+* `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组
+  
 ## TODO
 ### XML文件处理
 ### 根据矢量文件（如shapefile文件）的范围获取图像对应位置的值并分析
