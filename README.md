@@ -11,7 +11,7 @@
 
 `Pillow`：[Pillow](https://github.com/python-pillow/Pillow)  is the friendly PIL fork by Alex Clark and Contributors, and PIL is the Python Imaging Library by Fredrik Lundh and Contributors  
 
-`NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础性包  
+`NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础包  
 
 ## Cookbook  
 
