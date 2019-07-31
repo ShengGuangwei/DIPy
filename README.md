@@ -1,16 +1,16 @@
 # DIPy
 :earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing based on GDAL, osr, ogr, NumPy etc.  
 
-## 依赖的库  
+## 依赖的包  
 
-`osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源库](https://github.com/OSGeo)
-   * GDAL：英文全称为Geospatial Data Abstraction Library，是一个在X/MIT许可协议下的开源栅格空间数据转换库
-   * ogr：处理矢量文件
-   * osr：处理空间参考等 
+`osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源包](https://github.com/OSGeo)
+     > GDAL：英文全称为Geospatial Data Abstraction Library，是一个在X/MIT许可协议下的开源栅格空间数据转换库
+     > * ogr：处理矢量文件的包
+     > * osr：处理空间参考等的包 
 
 `Pillow`：Pillow is the friendly PIL fork by Alex Clark and Contributors, and PIL is the [Python Imaging Library](https://github.com/python-pillow/Pillow) by Fredrik Lundh and Contributors  
 
-`NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础性库  
+`NumPy`：[NumPy](https://numpy.org/)是一个用来做科学计算的基础性包  
 
 ## Cookbook  
 
@@ -23,7 +23,7 @@
 :wink: [GISpark](https://gispark.readthedocs.io/zh_CN/latest/index.html)  
 
 
-## 各种库下载地址  
+## 各种包的下载地址  
 
 :beginner: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)  
 
