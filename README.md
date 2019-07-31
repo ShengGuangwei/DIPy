@@ -1,5 +1,5 @@
 # DIPy
-:earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing, especially the image with spatial reference  
+:earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing, especially for the image with spatial reference  
 
 ## 依赖的包  
 
