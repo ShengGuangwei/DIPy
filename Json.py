@@ -17,7 +17,7 @@ import pandas as pd
 
 def json_dump(outfilename, dic):
     """
-    传入保存路径和字典参数，保存数据到对应的文件中
+    传入保存路径和字典等形式的数据，保存数据到对应的文件中
 
     :param outfilename: 输出文件路径（包括文件后缀名）
     :param dic: 需要保存为.json文件的字典等
