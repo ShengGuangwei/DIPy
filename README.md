@@ -13,7 +13,16 @@
 
 `NumPy`：[NumPy](https://numpy.org/) is the fundamental package for scientific computing with Python  
 
+`json`：[JSON (JavaScript Object Notation)](https://docs.python.org/3/library/json.html?highlight=json#module-json), specified by RFC 7159 (which obsoletes RFC 4627) and by ECMA-404, is a lightweight data interchange format inspired by JavaScript object literal syntax   
+
+`codecs`：[codecs](https://docs.python.org/3/library/codecs.html) defines base classes for standard Python codecs (encoders and decoders) and provides access to the internal Python codec registry, which manages the codec and error handling lookup process  
+
+`pandas`：[pandas](https://pandas.pydata.org/) is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language  
+
+
 ## Cookbook  
+
+:wink: [Python Documentation](https://docs.python.org/3/contents.html)  
 
 :wink: [the Python GDAL/OGR Cookbook](https://pcjericks.github.io/py-gdalogr-cookbook/)  
 
@@ -23,10 +32,13 @@
 
 :wink: [GISpark](https://gispark.readthedocs.io/zh_CN/latest/index.html)  
 
+:wink: [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/copyright.html)
+
 
 ## 各种Package的下载地址  
 
-:beginner: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)  
+:beginner: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/) 
+
 
 ## 组织结构  
 
@@ -59,7 +71,14 @@
 
   :persevere: 目前要求shapefile文件中**只有一个**Polygon要素，如果存在多个Polygon要素，根据要素提取后的结果之间会存在连线  
   
-  :persevere: 目前从raster提取出来的结果跟原图像比较后发现存在**像元的偏移**，可能是因为给新图像赋予一个新的左上角投影坐标时，未考虑原先图像对应像元的投影坐标，从而产生像元坐标位置偏移
+  :persevere: 目前从raster提取出来的结果跟原图像比较后发现存在**像元的偏移**，可能是因为给新图像赋予一个新的左上角投影坐标时，未考虑原先图像对应像元的投影坐标，从而产生像元坐标位置偏移  
+
+### `Json.py`  
+
+  * `json_dump`：传入保存路径和字典等形式的数据，保存数据到对应的文件中  
+  * `JsontoExcel`：将.json文件存储为.xlsx文件    
+  * `ExceltoJson`：将.xls或者.xlsx文件存储为.json文件  
+  
   
 > :bookmark: **TODO：**  
 
