@@ -42,6 +42,10 @@
 
 ## 组织结构  
 
+### `FileManager.py`  
+
+  * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组  
+  
 ###  `SpatialReference.py`  
 
   * `getPrjGeo`：获取给定数据的投影参考系和地理参考系 
@@ -58,10 +62,6 @@
   * `export_singleband`：输出单波段图像
   * `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
   
-### `FileManager.py`  
-
-  * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组
-
 ### `VectorProcessing.py`  
 
   * `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值  
