@@ -52,17 +52,17 @@
   * `getGeoDecimal`：将度分秒形式的坐标转换为小数形式
   * `getShapefile`：根据GDAL地理数据的覆盖范围生成相应的polygon文件
   
-### `SpectralIndex.py`  
+### `RasterProcessing.py`  
 
   * `read_img`：读取图像，返回图像数组等信息
   * `export_singleband`：输出单波段图像
   * `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
   
-### `FileScanning.py`  
+### `FileManager.py`  
 
   * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组
 
-### `GetShapefileCover.py`  
+### `VectorProcessing.py`  
 
   * `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值  
   > 代码来自[K. Arthur Endsley的博客](http://karthur.org/2015/clipping-rasters-in-python.html)
@@ -73,7 +73,7 @@
   
   :persevere: 目前从raster提取出来的结果跟原图像比较后发现存在**像元的偏移**，可能是因为给新图像赋予一个新的左上角投影坐标时，未考虑原先图像对应像元的投影坐标，从而产生像元坐标位置偏移  
 
-### `Json.py`  
+### `TextProcessing.py`  
 
   * `json_dump`：传入保存路径和字典等形式的数据，保存数据到对应的文件中  
   * `JsontoExcel`：将.json文件存储为.xlsx文件    
