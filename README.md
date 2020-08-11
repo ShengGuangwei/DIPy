@@ -45,6 +45,8 @@
 ### `FileManager.py`  
 
   * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组  
+  * `getFiles`：寻找给定文件夹下所有的文件，并返回这些文件名组成的数组
+  * `getFileName_withstart`：获取给定文件夹下给定开头和结尾的文件列表，并返回这些文件名组成的数组
   
 ###  `SpatialReference.py`  
 
