@@ -1,7 +1,7 @@
 # DIPy
 :earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing, especially for the image with spatial reference  
 
-## 依赖的Package  
+## 主要依赖的Package  
 
 `osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源Package](https://github.com/OSGeo)，包括GDAL、OGR和OSR  
 
@@ -47,6 +47,7 @@
   * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组  
   * `getFiles`：寻找给定文件夹下所有的文件，并返回这些文件名组成的数组
   * `getFileName_withstart`：获取给定文件夹下给定开头和结尾的文件列表，并返回这些文件名组成的数组
+  - `csvSpliting`：按照给定行数拆分csv文件
   
 ###  `SpatialReference.py`  
 
