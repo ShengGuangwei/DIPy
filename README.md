@@ -44,30 +44,30 @@
 
 ### `FileManager.py`  
 
-  * `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组  
-  * `getFiles`：寻找给定文件夹下所有的文件，并返回这些文件名组成的数组
-  * `getFileName_withstart`：获取给定文件夹下给定开头和结尾的文件列表，并返回这些文件名组成的数组
+  - `getFileName`：寻找给定文件夹下符合条件的文件，并返回这些文件名组成的数组  
+  - `getFiles`：寻找给定文件夹下所有的文件，并返回这些文件名组成的数组
+  - `getFileName_withstart`：获取给定文件夹下给定开头和结尾的文件列表，并返回这些文件名组成的数组
   - `csvSpliting`：按照给定行数拆分csv文件
   
 ###  `SpatialReference.py`  
 
-  * `getPrjGeo`：获取给定数据的投影参考系和地理参考系 
-  * `PCStoGCS`：将投影坐标转换为经纬度坐标 
-  * `GCStoPCS`：将地理坐标转换为投影坐标
-  * `getVerGeo`：获取GDAL地理数据的四个顶点的地理坐标
-  * `getGeoDegree`：将小数形式的坐标转换为度分秒形式
-  * `getGeoDecimal`：将度分秒形式的坐标转换为小数形式
-  * `getShapefile`：根据GDAL地理数据的覆盖范围生成相应的polygon文件
+  - `getPrjGeo`：获取给定数据的投影参考系和地理参考系 
+  - `PCStoGCS`：将投影坐标转换为经纬度坐标 
+  - `GCStoPCS`：将地理坐标转换为投影坐标
+  - `getVerGeo`：获取GDAL地理数据的四个顶点的地理坐标
+  - `getGeoDegree`：将小数形式的坐标转换为度分秒形式
+  - `getGeoDecimal`：将度分秒形式的坐标转换为小数形式
+  - `getShapefile`：根据GDAL地理数据的覆盖范围生成相应的polygon文件
   
 ### `RasterProcessing.py`  
 
-  * `read_img`：读取图像，返回图像数组等信息
-  * `export_singleband`：输出单波段图像
-  * `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
+  - `read_img`：读取图像，返回图像数组等信息
+  - `export_singleband`：输出单波段图像
+  - `get_ndvi`：计算输入图像的归一化植被指数（NDVI）并保存
   
 ### `VectorProcessing.py`  
 
-  * `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值  
+  - `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值  
   > 代码来自[K. Arthur Endsley的博客](http://karthur.org/2015/clipping-rasters-in-python.html)
   
 > :bomb: **存在的问题：**  
@@ -78,13 +78,13 @@
 
 ### `TextProcessing.py`  
 
-  * `json_dump`：传入保存路径和字典等形式的数据，保存数据到对应的文件中  
-  * `JsontoExcel`：将.json文件存储为.xlsx文件    
-  * `ExceltoJson`：将.xls或者.xlsx文件存储为.json文件
+  - `json_dump`：传入保存路径和字典等形式的数据，保存数据到对应的文件中  
+  - `JsontoExcel`：将.json文件存储为.xlsx文件    
+  - `ExceltoJson`：将.xls或者.xlsx文件存储为.json文件
   
 ### `OTSU.py`  
 
-  * `OTSU`：基于大津算法得到区分图像前景后景的阈值  
+  - `OTSU`：基于大津算法得到区分图像前景后景的阈值  
   
   
 > :bookmark: **TODO：**  
