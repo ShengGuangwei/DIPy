@@ -1,7 +1,7 @@
 # DIPy
 :earth_africa: :earth_africa: :earth_africa: This is a Python package for digital image processing, especially for the image with spatial reference  
 
-## 主要依赖的Package  
+## 主要依赖的Package | The Main Packages  
 
 `osgeo`：[Open Source Geospatial Foundation](https://www.osgeo.org/)提供的[开源Package](https://github.com/OSGeo)，包括GDAL、OGR和OSR  
 
@@ -20,7 +20,7 @@
 `pandas`：[pandas](https://pandas.pydata.org/) is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language  
 
 
-## Cookbook  
+## 工具书 | Cookbook  
 
 :wink: [Python Documentation](https://docs.python.org/3/contents.html)  
 
@@ -35,12 +35,12 @@
 :wink: [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/copyright.html)
 
 
-## 各种Package的下载地址  
+## 各种Package的下载地址 | The Download Site for Python Packages  
 
 :beginner: [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/) 
 
 
-## 组织结构  
+## 组织结构 | Cheet sheet  
 
 ### `FileManager.py`  
 
@@ -68,7 +68,7 @@
 ### `VectorProcessing.py`  
 
   - `clip_raster`：根据给定的shapefile Polygon文件提取出raster文件对应Polygon内的值  
-  > 代码来自[K. Arthur Endsley的博客](http://karthur.org/2015/clipping-rasters-in-python.html)
+  :running: 代码来自[K. Arthur Endsley的博客](http://karthur.org/2015/clipping-rasters-in-python.html)
   
 > :bomb: **存在的问题：**  
 
