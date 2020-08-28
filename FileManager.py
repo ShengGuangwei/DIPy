@@ -2,7 +2,7 @@
 # encoding: utf-8
 """
 @author: ShengGW
-@time: 19/07/26 23:45
+@time: 20/08/28 16:25
 @file: FileManager.py
 @version: ??
 @software: PyCharm
@@ -95,3 +95,64 @@ def getFileName_withstart(dirName, start, end, abspath=1):
                             pass
 
     return out_file_list
+
+def csvSpliting(dirName, newDirName, csvSize):
+    """
+    按照行数拆分csv文件
+    Args:
+        dirName: 待拆分csv文件
+        newDirName: 拆分后csv文件存储路径
+        csvSize: csv拆分行数
+
+    Returns:
+
+    """
+    # 文件的绝对路径
+    filePaths = getFiles(dirName)
+    # 文件名
+    fileNames = getFiles(dirName, abspath=0)
+
+    blockNames = fileNames.copy()
+
+    # 拆分
+    for i in range(len(filePaths)):
+        f = open(filePaths[i], "r", encoding='gbk')
+        lines = f.readlines()
+
+        # 确定拆分成的文件数目
+        blockNum = math.ceil(len(lines) / csvSize)
+        print(len(lines), blockNum)
+
+        # 根据待拆分文件新建文件夹
+        tempPath = os.path.join(newDirName, blockNames[i][:-4])
+        if not os.path.exists(tempPath):
+            os.mkdir(tempPath)
+
+        # 每csvSize行输出为一个csv文件
+        for j in range(blockNum):
+            if j < blockNum - 1:
+                newFilePath = os.path.join(tempPath, fileNames[i][:-4] + "_" + str(j + 1) + ".csv")
+                print(newFilePath)
+                new_f = open(newFilePath, "w", encoding='gbk')
+
+                # 每csvSize行为一个循环
+                for k in range(csvSize):
+                    lineNum = k + csvSize * j
+                    new_f.write(lines[lineNum])
+
+                new_f.close()
+
+            elif j == blockNum - 1:
+                newFilePath = os.path.join(tempPath, fileNames[i][:-4] + "_" + str(j + 1) + ".csv")
+                print(newFilePath)
+                new_f = open(newFilePath, "w", encoding='gbk')
+
+                # 计算剩余的行数
+                remainLines = len(lines) - csvSize * j
+                for k in range(remainLines):
+                    lineNum = k + csvSize * j
+                    new_f.write(lines[lineNum])
+
+                new_f.close()
+
+        f.close()
